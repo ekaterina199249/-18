@@ -8,9 +8,9 @@ public class Main {
         String lastName = "Ivanov";
         String fullName;
 
-        fullName = firstName + " " + middleName + " " + lastName;
+        fullName = lastName + " " + firstName + " " + middleName;
 
-                System.out.println("Ф. И. О. сотрудника - " + fullName);
+        System.out.println("Ф. И. О. сотрудника - " + fullName);
 
         System.out.println(task + 2);
         System.out.printf("Данные Ф. И. О. сотрудника для заполнения отчета - %s%n", fullName.toUpperCase());
@@ -18,7 +18,8 @@ public class Main {
         System.out.println(task + 3);
 
         fullName = "Иванов Семён Семёнович";
-        String corretedFullName = fullName.replace("ё", "е")
-        System.out.printf("Данные Ф. И. О. сотрудника - %s%n", fullName);
+        String corretedFullName = fullName.replace('ё', 'е');
+        System.out.printf("Данные Ф. И. О. сотрудника - %s%n", corretedFullName);
     }
 }
+
